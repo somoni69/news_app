@@ -16,4 +16,9 @@ Flutter-приложение для получения актуальных но
 ![image](https://github.com/user-attachments/assets/267603d8-201f-487d-82ef-90bd67619aec)
 ![image](https://github.com/user-attachments/assets/55aa0244-3ac3-4f55-a007-71445560b7e7)
 ![image](https://github.com/user-attachments/assets/6e7c683c-239a-43bb-a9cd-8e11a88abd7b)
+![image](https://github.com/user-attachments/assets/301be223-3c08-4270-ad8e-a9a23d0508c1)
 
+## 🚀 Запуск проекта:
+```bash
+flutter pub get
+flutter run
