@@ -1,24 +1,50 @@
-# 🗞️ NewsApp - Новости СНГ
+# 🗞️ NewsApp v2 — Новости СНГ с категориями и поиском
 
-Flutter-приложение для получения актуальных новостей по категориям через API [newsdata.io](https://newsdata.io/).
+Flutter-приложение, отображающее новости с использованием API [newsdata.io](https://newsdata.io/). Реализована навигация по категориям, поиск, обновление новостей и обработка ошибок изображений.
+
+---
 
 ## 🚀 Основные функции:
-- 📄 Получение новостей по категории (например: политика)
-- 🖼️ Отображение изображений с проверкой на ошибки загрузки
-- 📅 Форматирование даты публикации с использованием `intl`
-- 🔄 Асинхронная загрузка с индикатором загрузки
-- 🎯 Грамотная обработка ошибок при запросах
+
+- 🔍 Поиск новостей по ключевым словам
+- 🗂️ Категории: Политика, Экономика, Шоу-бизнес, Спорт
+- 📸 Отображение изображений и проверка ошибок загрузки
+- 📅 Форматирование даты публикации (через `intl`)
+- 🔁 Pull-to-refresh (обновление свайпом)
+- ⚠️ Гибкая обработка ошибок при загрузке данных
+
+---
+
+## 🛠️ Используемые технологии:
+
+- Flutter (Stateless/Stateful Widgets)
+- Dart
+- HTTP package (работа с REST API)
+- Intl (дата/время)
+- TabBar + TabBarView (для навигации)
+- FutureBuilder (асинхронная загрузка контента)
+
+---
 
 ## 📸 Скриншоты:
-![image](https://github.com/user-attachments/assets/4d433ed1-4abc-478e-9e1b-584d8d6419cc)
-![image](https://github.com/user-attachments/assets/dfa303f1-cf04-4e5b-a2c5-151d5a025b03)
-![image](https://github.com/user-attachments/assets/76c8024a-277f-480a-bb7e-3b9803c8c31d)
-![image](https://github.com/user-attachments/assets/267603d8-201f-487d-82ef-90bd67619aec)
-![image](https://github.com/user-attachments/assets/55aa0244-3ac3-4f55-a007-71445560b7e7)
-![image](https://github.com/user-attachments/assets/6e7c683c-239a-43bb-a9cd-8e11a88abd7b)
-![image](https://github.com/user-attachments/assets/301be223-3c08-4270-ad8e-a9a23d0508c1)
+Добавь свои скриншоты в папку `screenshots/` и вставь сюда:
+![image](https://github.com/user-attachments/assets/ad3c0b3a-fc63-4e7a-8c76-85a74c884376)
+![image](https://github.com/user-attachments/assets/9a12c3f3-f569-4145-a595-da2375da1f74)
+![image](https://github.com/user-attachments/assets/ed05f6f1-2c9e-412f-9cb4-e4d1cbff31aa)
+![image](https://github.com/user-attachments/assets/3326c55e-87a8-40b1-bc25-6dd74530517d)
+![image](https://github.com/user-attachments/assets/b98d62fa-9072-4c7a-ba41-8e989960890a)
+![image](https://github.com/user-attachments/assets/b50beff5-d74c-47fa-b857-e92f2c48de8b)
+![image](https://github.com/user-attachments/assets/2147c2cf-cafa-40ce-a57d-62baa83e2444)
+![image](https://github.com/user-attachments/assets/fdbb301d-cfa1-4286-be4a-2ab2a6d6fe1d)
+![image](https://github.com/user-attachments/assets/7e063227-b41d-4158-8e8c-5ab25b50705b)
+```markdown
 
-## 🚀 Запуск проекта:
-```bash
+![image](https://github.com/user-attachments/assets/4c9e8e86-87f4-428e-9750-679d5807f1ce) ![Главный экран](screenshots/home_screen.png)
+
+![image](https://github.com/user-attachments/assets/25e00295-7480-4381-a88c-5592a754a5d3) ![Поиск](screenshots/search.png)
+
+![image](https://github.com/user-attachments/assets/0c28a8a5-cd22-4659-a523-5f34bebbd46b) ![Категория - Спорт](screenshots/sports.png)
+
+
 flutter pub get
 flutter run
